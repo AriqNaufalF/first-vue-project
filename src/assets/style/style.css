@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Rubik';
+    font-display: swap;
+    src: url('/fonts/Rubik.ttf') format('truetype-variations');
+  }
+  html {
+    font-family: 'Rubik', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply rounded-lg bg-secondary px-5 py-2 text-lg text-black ring-black hover:shadow-md focus:ring-1;
+  }
+  .btn-disabled {
+    @apply disabled:cursor-not-allowed disabled:bg-slate-400 disabled:text-white disabled:opacity-80 disabled:hover:shadow-none;
+  }
+}
+
+@layer utilities {
+  .bg-image-size {
+    @apply bg-sm md:bg-md lg:bg-lg;
+  }
+
+  .gradient {
+    background: linear-gradient(
+      180deg,
+      rgba(39, 103, 187, 1) 0%,
+      rgba(39, 103, 187, 1) 70%,
+      rgb(25, 135, 209) 100%
+    );
+  }
+}
