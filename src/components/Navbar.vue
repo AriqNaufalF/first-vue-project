@@ -18,13 +18,11 @@ const handleClick = computed(() => ({
 
 <template>
   <nav class="navbar">
-    <!-- <a href="/">
-      <h1>ariqnaufalf</h1>
-    </a> -->
-    <div class="relative">
+    <div class="flex items-center px-8">
       <button
         type="button"
         aria-label="page menu"
+        class="ml-auto"
         @click="handleClick.open"
         :class="{
           'burger-active': openNav,
@@ -36,29 +34,23 @@ const handleClick = computed(() => ({
         <span class="burger-line origin-bottom-left"></span>
       </button>
       <Transition
-        enter-from-class="opacity-0 -translate-x-1/2"
+        enter-from-class="opacity-0 translate-x-1/2"
         enter-to-class="opacity-100 translate-x-0"
         enter-active-class="transition duration-300"
         leave-active-class="transition duration-300"
         leave-from-class="opacity-100 translate-x-0"
-        leave-to-class="opacity-0 -translate-x-1/2"
+        leave-to-class="opacity-0 translate-x-1/2"
       >
         <div
           @click="handleClick.close"
           v-show="openNav || size.md()"
-          class="fixed inset-0 md:static"
+          class="fixed inset-0 md:static md:w-full"
         >
           <div class="nav-link">
-            <div
-              class="flex flex-col space-y-2 divide-y md:flex-row md:space-y-0 md:space-x-4 md:divide-y-0"
-            >
-              <RouterLink to="/">Home</RouterLink>
-              <RouterLink to="/about">About</RouterLink>
-              <RouterLink to="/projects">Projects</RouterLink>
-            </div>
-            <div class="ml-auto">
-              <RouterLink to="/contact">Contact</RouterLink>
-            </div>
+            <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/about">About</RouterLink>
+            <RouterLink to="/projects">Projects</RouterLink>
+            <RouterLink to="/contact" class="ml-auto">Contact</RouterLink>
           </div>
         </div>
       </Transition>
@@ -68,11 +60,7 @@ const handleClick = computed(() => ({
 
 <style scoped>
 .navbar {
-  @apply sticky top-0 left-0 right-0 z-50 grid h-16 items-center bg-primary/70 px-8 text-white;
-}
-
-h1 {
-  @apply text-lg font-semibold md:text-xl lg:text-2xl;
+  @apply sticky top-0 left-0 right-0 z-50 grid h-16 items-center bg-primary/70 text-white;
 }
 
 /* Burger button */
@@ -94,12 +82,12 @@ h1 {
 
 /* Nav link */
 .nav-link {
-  @apply absolute top-14 left-10 block space-y-2 divide-y rounded-md bg-white px-6 py-3 text-center shadow-md
-  md:static md:flex md:justify-between md:space-y-0 md:space-x-4 md:divide-y-0 md:bg-transparent md:p-0 md:shadow-none;
+  @apply absolute top-14 right-10 block space-y-2 divide-y rounded-md bg-white px-6 py-3 text-center shadow-md
+  md:static md:flex md:gap-4 md:space-y-0 md:divide-y-0 md:bg-transparent md:p-0 md:shadow-none;
 }
 
-.nav-link a {
-  @apply block py-1 px-2 text-lg text-dark transition-transform hover:-translate-y-1 hover:scale-105 md:text-white;
+.nav-link > a {
+  @apply block py-1 px-2 text-lg text-black transition-transform hover:-translate-y-1 hover:scale-105 md:text-white;
 }
 
 a.router-link-exact-active {
