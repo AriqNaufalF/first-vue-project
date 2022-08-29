@@ -82,12 +82,12 @@ const handleClick = computed(() => ({
 
 /* Nav link */
 .nav-link {
-  @apply absolute top-14 right-10 block space-y-2 divide-y rounded-md bg-white px-6 py-3 text-center shadow-md
+  @apply absolute top-14 right-10 block divide-y rounded-md bg-white px-6 py-3 text-center shadow-md
   md:static md:flex md:gap-4 md:space-y-0 md:divide-y-0 md:bg-transparent md:p-0 md:shadow-none;
 }
 
 .nav-link > a {
-  @apply block py-1 px-2 text-lg text-black transition-transform hover:-translate-y-1 hover:scale-105 md:text-white;
+  @apply block py-2 px-2 text-lg text-black transition-transform hover:-translate-y-1 hover:scale-105 md:py-1 md:text-white;
 }
 
 a.router-link-exact-active {
