@@ -14,7 +14,7 @@ defineProps({
 </template>
 
 <style>
-svg {
+.icon-size {
   @apply mx-3 h-6 w-6;
 }
 </style>

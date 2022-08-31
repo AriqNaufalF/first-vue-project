@@ -9,15 +9,15 @@ import IconGithub from './icons/IconGithub.vue';
 <template>
   <div class="flex divide-x">
     <IconLink web="https://www.instagram.com/ariqn.fadh">
-      <IconInstagram />
+      <IconInstagram class="icon-size" />
     </IconLink>
     <IconLink
       web="https://www.linkedin.com/in/ariq-naufal-fadhlurrahman-4558a31b8/"
     >
-      <IconLinkedIn />
+      <IconLinkedIn class="icon-size" />
     </IconLink>
     <IconLink web="https://www.github.com/AriqNaufalF">
-      <IconGithub />
+      <IconGithub class="icon-size" />
     </IconLink>
   </div>
 </template>
