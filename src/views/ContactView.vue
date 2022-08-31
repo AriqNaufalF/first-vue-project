@@ -80,15 +80,11 @@ async function handleForm() {
           Let's talk.
         </h1>
         <p class="text-lg font-light">
-          Get in touch with me via the form below, or find me
+          Get in touch with me via the form below, or send email to
+          <a href="mailto:ariqn55@gmail.com" class="text-secondary"
+            >ariqn55@gmail.com</a
+          >
         </p>
-        <IconLink
-          web="https://instagram.com/ariqn.fadh"
-          class="flex max-w-min flex-row-reverse items-center justify-end underline underline-offset-2"
-        >
-          <IconInstagram class="mx-0 ml-1 h-5 w-5" />
-          <template #text> @ariqn.fadh </template>
-        </IconLink>
       </div>
       <!-- Contact form -->
       <div>
