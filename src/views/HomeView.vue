@@ -1,5 +1,5 @@
 <script setup>
-import TechItemList from '@/components/TechItemList.vue';
+import SocialItemList from '@/components/SocialItemList.vue';
 import { RouterLink } from 'vue-router';
 </script>
 
@@ -30,24 +30,23 @@ import { RouterLink } from 'vue-router';
     </section>
     <!-- description section -->
     <section
-      class="mt-5 mb-20 max-w-5xl space-y-2 md:col-span-2 md:place-self-start md:text-xl lg:col-start-2 lg:row-start-2 lg:m-0 lg:text-base"
+      class="mt-5 mb-20 md:col-span-2 md:place-self-start md:text-xl lg:col-start-2 lg:row-start-2 lg:m-0 lg:text-base"
     >
       <p>
-        My journey as a programmer started when I graduated from high school.
-        Currently I am a student at Telkom University majoring in software
-        engineering. But my focus is on web development.
+        Indonesia is where I'm from for the past few years, My journey as a
+        programmer started when I graduated from high school. I've honed my
+        skills in web programming, more recently mobile programming.
       </p>
-      <p>Here is some of the tech I learn thorughly</p>
-      <TechItemList />
-      <div class="group flex max-w-fit gap-1 pt-6">
-        <RouterLink to="/about" class="group-hover:underline"
-          >Know me more</RouterLink
-        >
-        <span
-          class="block transition-transform group-hover:translate-x-3 group-hover:tracking-widest"
-        >
-          >>
-        </span>
+      <p>
+        I'm currently in my second year at Telkom University majoring in
+        software engineering
+      </p>
+      <p>
+        Have an interesting project?
+        <RouterLink to="/contact" class="text-secondary">Let's talk</RouterLink>
+      </p>
+      <div class="mt-8">
+        <SocialItemList />
       </div>
     </section>
   </main>
@@ -55,8 +54,12 @@ import { RouterLink } from 'vue-router';
 
 <style scoped>
 main {
-  @apply grid grid-cols-1 items-center px-5 text-white
+  @apply mx-auto grid max-w-7xl grid-cols-1 items-center px-5 text-white
   md:auto-cols-min md:auto-rows-min md:place-content-center
   lg:auto-rows-auto lg:grid-cols-3 lg:justify-items-start;
+}
+
+p {
+  @apply mb-3;
 }
 </style>

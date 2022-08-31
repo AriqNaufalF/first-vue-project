@@ -44,11 +44,10 @@ const handleClick = computed(() => ({
         <div
           @click="handleClick.close"
           v-show="openNav || size.md()"
-          class="fixed inset-0 md:static md:w-full"
+          class="fixed inset-0 max-w-7xl md:static md:mx-auto md:w-full"
         >
           <div class="nav-link">
             <RouterLink to="/">Home</RouterLink>
-            <RouterLink to="/about">About</RouterLink>
             <RouterLink to="/projects">Projects</RouterLink>
             <RouterLink to="/contact" class="ml-auto">Contact</RouterLink>
           </div>
@@ -87,11 +86,11 @@ const handleClick = computed(() => ({
 }
 
 .nav-link > a {
-  @apply block py-2 px-2 text-lg text-black transition-transform hover:-translate-y-1 hover:scale-105 md:py-1 md:text-white;
+  @apply block py-2 px-2 text-lg text-gray-500 transition-transform md:py-1 md:text-gray-300 hover:md:-translate-y-1 hover:md:scale-105 hover:md:text-white;
 }
 
 a.router-link-exact-active {
-  @apply hover:translate-y-1 hover:scale-100 md:relative md:translate-y-1;
+  @apply text-black hover:translate-y-1 hover:scale-100 md:relative md:translate-y-1 md:text-white;
 }
 
 a.router-link-exact-active::before {

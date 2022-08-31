@@ -15,6 +15,6 @@ defineProps({
 
 <style>
 svg {
-  @apply mx-2 h-6 w-6;
+  @apply mx-3 h-6 w-6;
 }
 </style>
