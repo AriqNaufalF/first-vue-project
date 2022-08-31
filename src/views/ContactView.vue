@@ -1,6 +1,4 @@
 <script setup>
-import IconLink from '../components/IconLink.vue';
-import IconInstagram from '../components/icons/IconInstagram.vue';
 import IconSpinner from '../components/icons/IconSpinner.vue';
 import Alert from '../components/Alert.vue';
 import FormInput from '../components/FormInput.vue';

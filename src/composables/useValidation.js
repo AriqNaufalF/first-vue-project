@@ -9,8 +9,8 @@ export default function useValidation() {
 
   const check = computed(() => ({
     name(name) {
-      if (/^\w{3,65}$/.test(name)) {
-        if (/[^a-zA-Z]+/.test(name)) {
+      if (/\w{3,65}/.test(name)) {
+        if (/[^a-zA-Z\s]+/.test(name)) {
           msg.name = "Name can't contain numbers and special characters";
         } else {
           msg.name = '';
@@ -20,7 +20,7 @@ export default function useValidation() {
       }
     },
     email(email) {
-      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,15})+$/.test(email)) {
         msg.email = '';
       } else {
         msg.email = 'Please enter a valid email address!';
