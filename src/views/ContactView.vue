@@ -74,9 +74,9 @@ async function handleForm() {
     <section class="w-full space-y-5 md:w-1/2">
       <!-- Description -->
       <div>
-        <h1 class="text-2xl font-bold tracking-wide md:text-3xl">
+        <h2 class="text-2xl font-bold tracking-wide md:text-3xl">
           Let's talk.
-        </h1>
+        </h2>
         <p class="text-lg font-light">
           Get in touch with me via the form below, or send email to
           <a href="mailto:ariqn55@gmail.com" class="text-secondary"
