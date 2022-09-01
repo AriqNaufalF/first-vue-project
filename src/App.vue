@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar.vue';
 </script>
 
 <template>
-  <div class="gradient min-h-screen">
+  <div class="gradient min-h-screen overflow-hidden">
     <Navbar></Navbar>
     <RouterView
       v-slot="{ Component }"
@@ -13,10 +13,11 @@ import Navbar from '@/components/Navbar.vue';
       <Transition
         enter-from-class="opacity-0"
         enter-to-class="opacity-100"
-        enter-active-class="transition-opacity duration-200"
-        leave-active-class="transition-opacity duration-200"
+        enter-active-class="transition-all duration-200 ease-out"
+        leave-active-class="transition-all duration-200 ease-out"
         leave-from-class="opacity-100"
         leave-to-class="opacity-0"
+        mode="out-in"
       >
         <component :is="Component" />
       </Transition>
