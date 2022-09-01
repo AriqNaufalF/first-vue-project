@@ -1,6 +1,11 @@
 <script setup>
+import AOS from 'aos';
 import SocialItemList from '@/components/SocialItemList.vue';
 import { RouterLink } from 'vue-router';
+import { onMounted } from 'vue';
+onMounted(() => {
+  AOS.init();
+});
 </script>
 
 <template>
@@ -8,6 +13,7 @@ import { RouterLink } from 'vue-router';
     <!-- greeting section -->
     <section
       class="mt-16 w-full md:place-self-center lg:col-span-2 lg:col-start-2 lg:m-0"
+      data-aos="fade-down"
     >
       <h1
         class="mb-5 text-3xl font-extrabold tracking-wider md:text-4xl lg:text-5xl"
@@ -21,6 +27,8 @@ import { RouterLink } from 'vue-router';
     <!-- image section -->
     <section
       class="mt-10 w-full md:place-self-end lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:m-0 lg:place-self-center"
+      data-aos="fade-right"
+      data-aos-delay="200"
     >
       <img
         src="/svg/work.svg"
@@ -31,6 +39,9 @@ import { RouterLink } from 'vue-router';
     <!-- description section -->
     <section
       class="mt-5 mb-20 md:col-span-2 md:place-self-start md:text-xl lg:col-start-2 lg:row-start-2 lg:m-0 lg:text-base"
+      data-aos="fade-up"
+      data-aos-delay="250"
+      data-aos-duration="500"
     >
       <p>
         Indonesia is where I'm from for the past few years, My journey as a

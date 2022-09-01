@@ -4,8 +4,13 @@ import Alert from '../components/Alert.vue';
 import FormInput from '../components/FormInput.vue';
 import FormTextarea from '../components/FormTextarea.vue';
 
+import AOS from 'aos';
 import useValidation from '@/composables/useValidation';
-import { reactive, ref } from 'vue';
+import { reactive, ref, onMounted } from 'vue';
+
+onMounted(() => {
+  AOS.init();
+});
 
 let form = reactive({
   name: '',
@@ -73,7 +78,7 @@ async function handleForm() {
     </Teleport>
     <section class="w-full space-y-5 md:w-1/2">
       <!-- Description -->
-      <div>
+      <div data-aos="fade-down">
         <h2 class="text-2xl font-bold tracking-wide md:text-3xl">
           Let's talk.
         </h2>
@@ -85,7 +90,7 @@ async function handleForm() {
         </p>
       </div>
       <!-- Contact form -->
-      <div>
+      <div data-aos="fade-right" data-aos-delay="200">
         <form class="space-y-4" @submit.prevent="handleForm">
           <!-- input name -->
           <FormInput
