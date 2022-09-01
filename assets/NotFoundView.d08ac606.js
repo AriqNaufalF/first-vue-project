@@ -1,0 +1,1 @@
+import{_ as e,o as s,c as o,a as t}from"./index.f4e89570.js";const n={},c={class:"bg-image-size bg-[url('/svg/404.svg')] bg-center bg-no-repeat"},a=t("span",{class:"sr-only"},"Error 404, page not found",-1),r=[a];function _(i,d){return s(),o("main",c,r)}const l=e(n,[["render",_]]);export{l as default};
