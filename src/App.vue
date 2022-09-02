@@ -22,5 +22,8 @@ import Navbar from '@/components/Navbar.vue';
         <component :is="Component" />
       </Transition>
     </RouterView>
+    <footer class="my-4 text-center text-xs text-white">
+      <a href="https://storyset.com"> Illustrations by Storyset </a>
+    </footer>
   </div>
 </template>
