@@ -34,6 +34,8 @@ onMounted(() => {
         src="/svg/work.svg"
         alt="A person working in front of computer"
         class="mx-auto w-72 max-w-sm lg:mx-0 lg:w-full"
+        width="400"
+        height="400"
       />
     </section>
     <!-- description section -->

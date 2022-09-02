@@ -20,7 +20,12 @@ onMounted(() => {
         data-aos-delay="350"
       >
         <template #img>
-          <img src="/img/kumbah.jpeg" alt="Kumbah web app" />
+          <img
+            src="/img/kumbah.webp"
+            alt="Kumbah web app"
+            width="560"
+            height="280"
+          />
         </template>
         <template #title>Kumbah</template>
         Kumbah is an online laundry marketplace, kumbah brings together laundry
@@ -34,7 +39,12 @@ onMounted(() => {
         data-aos-delay="400"
       >
         <template #img>
-          <img src="/img/ariq-blog.jpeg" alt="Ariq blog website" />
+          <img
+            src="/img/ariq-blog.webp"
+            alt="Ariq blog website"
+            width="560"
+            height="280"
+          />
         </template>
         <template #title>Ariq Blog</template>
         This project was created to learn laravel framework, with learning
@@ -51,8 +61,10 @@ onMounted(() => {
       >
         <template #img>
           <img
-            src="/img/technical-docs.jpeg"
+            src="/img/technical-docs.webp"
             alt="A simple HTML technical documentaion page"
+            width="560"
+            height="280"
           />
         </template>
         <template #title>HTML Technical Documentation</template>
@@ -68,8 +80,10 @@ onMounted(() => {
       >
         <template #img>
           <img
-            src="/img/survey-form.jpeg"
+            src="/img/survey-form.webp"
             alt="HTML & CSS Survey form website"
+            width="560"
+            height="280"
           />
         </template>
         <template #title>HTML & CSS Survey Form</template>
