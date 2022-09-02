@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 | Portfolio</title>
+    <style>
+      @font-face {
+        font-family: 'Rubik';
+        font-display: swap;
+        src: url('/fonts/Rubik.ttf') format('truetype-variations');
+      }
+
+      body {
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+        margin: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(39, 103, 187, 1) 0%,
+          rgba(39, 103, 187, 1) 70%,
+          rgb(25, 135, 209) 100%
+        );
+        color: white;
+        font-family: 'Rubik';
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .code,
+      .title,
+      .question {
+        text-align: center;
+        margin: 0;
+      }
+
+      .code {
+        font-size: 4rem;
+        font-weight: 600;
+      }
+
+      .title {
+        text-transform: uppercase;
+        margin-bottom: 1.25rem;
+      }
+
+      .link {
+        display: block;
+        margin-top: 0.75rem;
+        padding: 3px 20px;
+        color: #fa9038;
+        text-decoration: none;
+        border: solid #fa9038 1px;
+        border-radius: 99px;
+        transition: all cubic-bezier(0.19, 0, 0.22, 1) 300ms;
+      }
+
+      .link:hover {
+        background-color: #fa9038;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p class="code">404</p>
+      <h1 class="title">page not found</h1>
+      <p class="question">Are you lost?</p>
+      <a href="/" class="link">Take me home</a>
+    </div>
+  </body>
+</html>
